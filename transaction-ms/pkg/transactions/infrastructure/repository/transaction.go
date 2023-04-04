@@ -28,7 +28,7 @@ func (c *transactionRepository) CastMultipartFileToStruct(file *multipart.File) 
 	return transactions, nil
 }
 
-// This functions encapsulate all process of transaction
+// This function encapsulate all process of transaction
 // 1.) Splits transactions into chunks to process them (chunksTransactions)
 // 2.) Parse transaction chunks in the correct way for processing them (operateCSVTransactions)
 // 3.) Concat all chunks results in a only one object (concatTransactionChunks)
